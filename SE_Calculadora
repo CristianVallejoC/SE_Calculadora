@@ -1,0 +1,33 @@
+while 1:
+  print("CALCULADORA")
+  print("OPCIONES")
+  print("1. SUMA")
+  print("2. RESTA")
+  print("3. MULTIPLICACIÓN")
+  print("4. DIVISIÓN")
+  print("5. SALIR")
+
+  op=int(input("OPERACIÓN: "))
+
+  if op==5:
+    print("SALISTE")
+    break
+  
+  if op>5:
+      print("DIGITE UNA OPCIÓN VALIDA")
+      break
+
+  val1=float(input("PRIMER VALOR: "))
+  val2=float(input("SEGUNDO VALOR: "))
+  if op==1:
+    res=val1+val2
+    print("La sumatoria es: ", res)
+  elif op==2:
+    res=val1-val2
+    print("La resta es: ", res)
+  elif op==3:
+      res=val1*val2
+      print("La multiplicación es: ", res)
+  elif op==4:
+      res=val1/val2
+      print("La división es: ", res)
